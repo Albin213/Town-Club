@@ -12,7 +12,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="relative mt-32 overflow-hidden bg-slate-950 text-white">
+    <footer className="relative  overflow-hidden bg-slate-950 text-white">
 
       {/* 🔥 Strong Radial Glow Background */}
       <div className="absolute -top-40 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-violet-600/30 blur-[140px] rounded-full pointer-events-none"></div>

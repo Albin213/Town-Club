@@ -5,7 +5,7 @@ export default function Gallery() {
         Gallery
       </h1>
 
-      <div className="grid md:grid-cols-3 gap-6 mt-12">
+      <div className="grid md:grid-cols-3 gap-6 my-12">
         {[1,2,3,4,5,6].map((i) => (
           <img
             key={i}

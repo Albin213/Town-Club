@@ -51,6 +51,7 @@ import Hero from "@/components/Hero";
 import { motion } from "framer-motion";
 import ScrollReveal from "@/components/ScrollReveal";
 import ParallaxImage from "@/components/ParallaxImage";
+import ParallaxCarousel from "@/components/ParallaxCarousel";
 
 export default function Home() {
   return (
@@ -81,17 +82,17 @@ export default function Home() {
               {
                 title: "Football Team",
                 image:
-                  "https://images.unsplash.com/photo-1508098682722-e99c43a406b2",
+                  "/img3.jpg",
               },
               {
-                title: "Cricket Team",
+                title: "Football Team",
                 image:
-                  "https://images.unsplash.com/photo-1593766827228-8737b4534aa6",
+                  "/img4.jpg",
               },
               {
-                title: "Volleyball Team",
+                title: "Football Team",
                 image:
-                  "https://images.unsplash.com/photo-1521417531039-0a8b1b6b4f94",
+                  "/img5.jpg",
               },
             ].map((team, index) => (
               <motion.div
@@ -145,19 +146,19 @@ export default function Home() {
           {/* Right Image Collage */}
           <div className="grid grid-cols-2 gap-6">
             <img
-              src="https://images.unsplash.com/photo-1517649763962-0c623066013b"
+              src="/img1.jpg"
               className="rounded-2xl h-48 w-full object-cover hover:scale-105 transition"
             />
             <img
-              src="https://images.unsplash.com/photo-1521417531039-0a8b1b6b4f94"
+              src="/imag2.jpg"
               className="rounded-2xl h-48 w-full object-cover hover:scale-105 transition"
             />
             <img
-              src="https://images.unsplash.com/photo-1546519638-68e109498ffc"
+              src="/img6.jpg"
               className="rounded-2xl h-48 w-full object-cover hover:scale-105 transition"
             />
             <img
-              src="https://images.unsplash.com/photo-1508804185872-d7badad00f7d"
+              src="/img7.jpg"
               className="rounded-2xl h-48 w-full object-cover hover:scale-105 transition"
             />
           </div>
@@ -181,12 +182,16 @@ export default function Home() {
       </section>
 
       {/* Parallax Section */}
-      <section className="px-6 pb-24 max-w-6xl mx-auto">
+      {/* <section className="px-6 pb-24 max-w-6xl mx-auto">
         <ParallaxImage
-          src="https://images.unsplash.com/photo-1593766827228-8737b4534aa6"
+          src="/parallex.jpg"
           height="500px"
         />
-      </section>
+      </section> */}
+      <section className="px-6 pb-24 max-w-6xl mx-auto">
+  <ParallaxCarousel />
+</section>
+   
     </main>
   );
 }
