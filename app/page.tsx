@@ -85,14 +85,14 @@ export default function Home() {
                   "/img3.jpg",
               },
               {
-                title: "Football Team",
+                title: "Cricket Team",
                 image:
-                  "/img4.jpg",
+                  "/img8.jpg",
               },
               {
-                title: "Football Team",
+                title: "Volleyball Team",
                 image:
-                  "/img5.jpg",
+                  "/img12.jpg",
               },
             ].map((team, index) => (
               <motion.div

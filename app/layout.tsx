@@ -87,7 +87,7 @@ export default function RootLayout({
     <Navbar />
 
     {/* Main grows to push footer down */}
-    <main className="flex-1 pt-24  bg-gradient-to-r from-indigo-900/90 via-slate-900/80 to-violet-900/90">
+    <main className="flex-1  bg-gradient-to-r from-indigo-900/90 via-slate-900/80 to-violet-900/90">
       {children}
     </main>
 

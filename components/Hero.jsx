@@ -1,42 +1,10 @@
-// "use client";
-// import { motion } from "framer-motion";
-
-// export default function Hero() {
-//   return (
-//     <section className="h-screen flex items-center justify-center text-center bg-gradient-to-r from-indigo-700 to-violet-700">
-//       <motion.div
-//         initial={{ opacity: 0, y: 50 }}
-//         animate={{ opacity: 1, y: 0 }}
-//         transition={{ duration: 1 }}
-//       >
-//         <h1 className="text-5xl md:text-7xl font-extrabold">
-//           Town Club Edathua
-//         </h1>
-//         <p className="mt-6 text-lg md:text-xl max-w-xl mx-auto">
-//           A Passion for Sports. A Legacy of Champions.
-//         </p>
-
-//         <button className="mt-8 bg-white text-violet-700 px-8 py-3 rounded-full font-semibold hover:scale-105 transition">
-//           Join Our Club
-//         </button>
-//       </motion.div>
-//     </section>
-//   );
-// }
-
-
-
-
-
-
-
-
-
 
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 import { useEffect, useState } from "react";
+import { FaInstagram } from "react-icons/fa";
 
 export default function Hero() {
   const [text, setText] = useState("");
@@ -53,7 +21,7 @@ export default function Hero() {
             if (index < iteration) return finalText[index];
             return String.fromCharCode(65 + Math.floor(Math.random() * 26));
           })
-          .join("")
+          .join(""),
       );
 
       if (iteration >= finalText.length) clearInterval(interval);
@@ -64,14 +32,12 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center text-center overflow-hidden">
-
+    <section className="relative min-h-screen flex items-center justify-center text-center overflow-hidden pt-40">
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
-          backgroundImage:
-            "url('https://images.unsplash.com/photo-1508098682722-e99c43a406b2')",
+          backgroundImage: "url('/img1.jpg')",
         }}
       ></div>
 
@@ -104,20 +70,32 @@ export default function Hero() {
 
         {/* Buttons */}
         <div className="mt-10 flex flex-col sm:flex-row gap-6 justify-center">
-          <button className="px-8 py-3 rounded-full bg-gradient-to-r from-indigo-500 to-violet-600 text-white font-semibold shadow-lg hover:scale-105 transition">
+          {/* <button className="px-8 py-3 rounded-full bg-gradient-to-r from-indigo-500 to-violet-600 text-white font-semibold shadow-lg hover:scale-105 transition">
             Join Our Club
-          </button>
+          </button> */}
+          <a
+            href="https://www.instagram.com/edathuva_town_club?igsh=MTE4ZXhpeGZ1aGp2eg=="
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 px-8 py-3 rounded-full bg-gradient-to-r from-indigo-500 to-violet-600 text-white font-semibold shadow-lg hover:scale-105 hover:shadow-violet-500/40 transition"
+          >
+            <FaInstagram className="text-lg" />
+            Follow Us on Instagram
+          </a>
 
-          <button className="px-8 py-3 rounded-full border border-white/30 backdrop-blur-md bg-white/10 text-white hover:bg-white/20 transition">
-            View Teams
-          </button>
+          <Link
+            href={"/events"}
+            className="px-8 py-3 rounded-full border border-white/30 backdrop-blur-md bg-white/10 text-white hover:bg-white/20 transition"
+          >
+            View Events
+          </Link>
         </div>
 
         {/* Stats Section */}
         <div className="grid grid-cols-3 gap-8 mt-16 text-center">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-indigo-400">
-              15+
+              50+
             </h2>
             <p className="text-gray-400 mt-2">Tournaments Won</p>
           </div>
@@ -131,7 +109,7 @@ export default function Hero() {
 
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-purple-400">
-              10+
+              25+
             </h2>
             <p className="text-gray-400 mt-2">Years of Excellence</p>
           </div>

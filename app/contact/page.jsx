@@ -5,9 +5,8 @@ import {
   FaPhone,
   FaEnvelope,
   FaMapMarkerAlt,
-  FaFacebookF,
   FaInstagram,
-  FaTwitter,
+  FaWhatsapp,
 } from "react-icons/fa";
 
 export default function Contact() {
@@ -54,7 +53,7 @@ export default function Contact() {
               </div>
               <div>
                 <p className="text-gray-400 text-sm">Phone</p>
-                <p className="text-lg font-semibold">+91 98765 43210</p>
+                <p className="text-lg font-semibold">+91 97475 45872</p>
               </div>
             </div>
 
@@ -79,16 +78,30 @@ export default function Contact() {
             </div>
 
             {/* Social Icons */}
-            <div className="flex gap-4 pt-4">
-              {[FaFacebookF, FaInstagram, FaTwitter].map((Icon, i) => (
-                <div
-                  key={i}
-                  className="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 backdrop-blur-md border border-white/20 hover:bg-gradient-to-r from-indigo-500 to-violet-600 transition cursor-pointer"
-                >
-                  <Icon />
-                </div>
-              ))}
-            </div>
+           
+<div className="flex gap-4 mt-6">
+  
+  {/* WhatsApp */}
+  <a
+    href="https://wa.me/919544016366"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 backdrop-blur-md border border-white/20 hover:bg-green-500 transition cursor-pointer"
+  >
+    <FaWhatsapp className="text-lg" />
+  </a>
+
+  {/* Instagram */}
+  <a
+    href="https://www.instagram.com/edathuva_town_club?igsh=MTE4ZXhpeGZ1aGp2eg=="
+    target="_blank"
+    rel="noopener noreferrer"
+    className="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 backdrop-blur-md border border-white/20 hover:bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 transition cursor-pointer"
+  >
+    <FaInstagram className="text-lg" />
+  </a>
+
+</div>
           </motion.div>
 
           {/* Right - Contact Form */}

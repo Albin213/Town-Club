@@ -1,13 +1,13 @@
 "use client";
 
 import {
-  FaFacebookF,
   FaInstagram,
-  FaTwitter,
+  FaWhatsapp,
   FaMapMarkerAlt,
   FaPhone,
   FaEnvelope,
 } from "react-icons/fa";
+
 import Link from "next/link";
 
 export default function Footer() {
@@ -32,16 +32,29 @@ export default function Footer() {
               community through sports excellence and teamwork.
             </p>
 
-            <div className="flex gap-4 mt-6">
-              {[FaFacebookF, FaInstagram, FaTwitter].map((Icon, i) => (
-                <div
-                  key={i}
-                  className="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 backdrop-blur-md border border-white/20 hover:bg-gradient-to-r from-indigo-500 to-violet-600 transition cursor-pointer"
-                >
-                  <Icon />
-                </div>
-              ))}
-            </div>
+           <div className="flex gap-4 mt-6">
+  
+  {/* WhatsApp */}
+  <a
+    href="https://wa.me/919544016366"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 backdrop-blur-md border border-white/20 hover:bg-green-500 transition cursor-pointer"
+  >
+    <FaWhatsapp className="text-lg" />
+  </a>
+
+  {/* Instagram */}
+  <a
+    href="https://www.instagram.com/edathuva_town_club?igsh=MTE4ZXhpeGZ1aGp2eg=="
+    target="_blank"
+    rel="noopener noreferrer"
+    className="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 backdrop-blur-md border border-white/20 hover:bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 transition cursor-pointer"
+  >
+    <FaInstagram className="text-lg" />
+  </a>
+
+</div>
           </div>
 
           {/* Quick Links */}
@@ -53,7 +66,7 @@ export default function Footer() {
             <ul className="space-y-4 text-gray-400">
               <li><Link href="/" className="hover:text-white transition">Home</Link></li>
               <li><Link href="/about" className="hover:text-white transition">About</Link></li>
-              <li><Link href="/teams" className="hover:text-white transition">Teams</Link></li>
+              <li><Link href="/events" className="hover:text-white transition">Events</Link></li>
               <li><Link href="/gallery" className="hover:text-white transition">Gallery</Link></li>
               <li><Link href="/contact" className="hover:text-white transition">Contact</Link></li>
             </ul>
@@ -72,7 +85,7 @@ export default function Footer() {
               </p>
               <p className="flex items-center gap-3">
                 <FaPhone className="text-indigo-400" />
-                +91 98765 43210
+                +91 97475 45872
               </p>
               <p className="flex items-center gap-3">
                 <FaEnvelope className="text-indigo-400" />

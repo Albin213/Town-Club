@@ -1,14 +1,14 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { FaTools } from "react-icons/fa";
+import { FaCalendarAlt } from "react-icons/fa";
 
-export default function About() {
+export default function Events() {
   return (
     <section className="relative min-h-screen flex items-center justify-center px-6 bg-slate-950 text-white overflow-hidden">
 
-      {/* 🔥 Glow Background */}
-      <div className="absolute top-24 left-1/2 -translate-x-1/2 w-[700px] h-[400px] bg-violet-600/20 blur-[140px] rounded-full"></div>
+      {/* Glow Background */}
+      <div className="absolute top-20 left-1/2 -translate-x-1/2 w-[700px] h-[400px] bg-violet-600/20 blur-[140px] rounded-full"></div>
 
       <motion.div
         initial={{ opacity: 0, y: 40 }}
@@ -18,24 +18,23 @@ export default function About() {
       >
         {/* Icon */}
         <div className="flex justify-center mb-6">
-          <div className="w-20 h-20 flex items-center justify-center rounded-full bg-gradient-to-r from-indigo-500 to-violet-600 text-3xl shadow-lg animate-pulse">
-            <FaTools />
+          <div className="w-20 h-20 flex items-center justify-center rounded-full bg-gradient-to-r from-indigo-500 to-violet-600 text-3xl shadow-lg">
+            <FaCalendarAlt />
           </div>
         </div>
 
         {/* Heading */}
         <h1 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-indigo-400 via-violet-400 to-purple-500 bg-clip-text text-transparent">
-          Page Under Maintenance
+          No Events Yet
         </h1>
 
-        {/* Description */}
+        {/* Message */}
         <p className="mt-6 text-gray-400 text-lg">
-          We're currently updating this page with exciting content about
-          Town Club Edathua.
+          There are currently no upcoming events.
         </p>
 
         <p className="mt-2 text-gray-500">
-          Stay tuned! We’ll notify you once everything is ready.
+          Stay tuned! We will notify you as soon as new events are announced.
         </p>
 
         {/* Button */}
@@ -43,7 +42,6 @@ export default function About() {
           Stay Tuned
         </button>
       </motion.div>
-
     </section>
   );
 }
