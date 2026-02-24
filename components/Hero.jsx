@@ -1,4 +1,3 @@
-
 "use client";
 
 import { motion } from "framer-motion";
@@ -73,11 +72,30 @@ export default function Hero() {
           {/* <button className="px-8 py-3 rounded-full bg-gradient-to-r from-indigo-500 to-violet-600 text-white font-semibold shadow-lg hover:scale-105 transition">
             Join Our Club
           </button> */}
-          <a
+          {/* <a
             href="https://www.instagram.com/edathuva_town_club?igsh=MTE4ZXhpeGZ1aGp2eg=="
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 px-8 py-3 rounded-full bg-gradient-to-r from-indigo-500 to-violet-600 text-white font-semibold shadow-lg hover:scale-105 hover:shadow-violet-500/40 transition"
+          >
+            <FaInstagram className="text-lg" />
+            Follow Us on Instagram
+          </a> */}
+          <a
+            href="https://www.instagram.com/edathuva_town_club?igsh=MTE4ZXhpeGZ1aGp2eg=="
+            target="_blank"
+            rel="noopener noreferrer"
+            className="
+    w-full sm:w-auto
+    inline-flex items-center justify-center gap-3
+    px-8 py-3
+    rounded-full
+    bg-gradient-to-r from-indigo-500 to-violet-600
+    text-white font-semibold
+    shadow-lg
+    hover:scale-105 hover:shadow-violet-500/40
+    transition
+  "
           >
             <FaInstagram className="text-lg" />
             Follow Us on Instagram
