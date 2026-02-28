@@ -79,7 +79,7 @@ export default function Home() {
               },
               {
                 title: "Cricket Team",
-                image: "/img8.jpg",
+                image: "/img13.jpg",
               },
               {
                 title: "Volleyball Team",

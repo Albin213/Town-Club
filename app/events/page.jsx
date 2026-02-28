@@ -18,7 +18,7 @@ export default function Events() {
       >
         {/* Icon */}
         <div className="flex justify-center mb-6">
-          <div className="w-20 h-20 flex items-center justify-center rounded-full bg-gradient-to-r from-indigo-500 to-violet-600 text-3xl shadow-lg">
+          <div className="w-20 h-20 flex items-center justify-center rounded-full bg-gradient-to-r from-indigo-500 to-violet-600 text-3xl shadow-lg animate-pulse">
             <FaCalendarAlt />
           </div>
         </div>
